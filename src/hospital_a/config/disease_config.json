@@ -1,0 +1,32 @@
+{
+    "train_signals": "c:/Users/aishw/codered5/src/hospital_a/data/X_train.npy",
+    "val_signals": "c:/Users/aishw/codered5/src/hospital_a/data/X_val.npy",
+    "labels_csv": "C:/Users/aishw/OneDrive/Dokumen/Roorkee/ecg/ptbxl_database.csv",
+    "train_ids": null,
+    "val_ids": null,
+    "output_dir": "src/hospital_a/train/checkpoints",
+    "batch_size": 32,
+    "epochs": 10,
+    "lr": 1e-4,
+    "leads_idx": [
+        0,
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+    ],
+    "model_config": {
+        "in_channels": 8,
+        "res_channels": 128,
+        "skip_channels": 128,
+        "num_res_layers": 12,
+        "s4_lmax": 1000,
+        "s4_d_state": 64,
+        "s4_dropout": 0.0,
+        "s4_bidirectional": 1,
+        "s4_layernorm": 1
+    }
+}

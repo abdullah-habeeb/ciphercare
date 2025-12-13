@@ -1,0 +1,96 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      
+[92mINFO [0m:      Received: get_parameters message e2a662b9-ee64-4357-b509-b2155620a2e4
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a5526a84-1c9b-46ed-bdd9-0cb497f04d79
+C:\Users\aishw\codered5\run_hospital_a_client_enhanced.py:78: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  params_dict = dict(zip(self.model.state_dict().keys(), [torch.tensor(p) for p in self.global_params]))
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message ac985624-8195-49b7-8b3a-a6ad76c49062
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message fcc6830b-6aef-4d19-bf6c-be4028553577
+C:\Users\aishw\codered5\run_hospital_a_client_enhanced.py:78: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  params_dict = dict(zip(self.model.state_dict().keys(), [torch.tensor(p) for p in self.global_params]))
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 5ca3dca5-6738-4b2d-93ff-3101ef3a8035
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message e824cbc7-11a8-4948-ab58-37ad783c7730
+C:\Users\aishw\codered5\run_hospital_a_client_enhanced.py:78: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  params_dict = dict(zip(self.model.state_dict().keys(), [torch.tensor(p) for p in self.global_params]))
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 1a681c58-62c0-47cc-8f6b-41e4c7a522db
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 53383310-5fcf-4317-8b96-ceb821b6f0c5
+C:\Users\aishw\codered5\run_hospital_a_client_enhanced.py:78: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  params_dict = dict(zip(self.model.state_dict().keys(), [torch.tensor(p) for p in self.global_params]))
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 51739d56-a2fd-4780-95c0-cc4004677a94
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message b04bceb9-efe8-4542-8f49-b1b4072f1049
+C:\Users\aishw\codered5\run_hospital_a_client_enhanced.py:78: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  params_dict = dict(zip(self.model.state_dict().keys(), [torch.tensor(p) for p in self.global_params]))
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 3f0b903d-bc37-433b-b1b9-c5606f9dfd16
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: reconnect message 6d9e6c48-1260-4b1b-9b46-d056136cbbfa
+[92mINFO [0m:      Disconnect and shut down
+Hospital A Client Starting...
+DEBUG: Hospital A Model Architecture:
+UnifiedFLModel(
+  (net): Sequential(
+    (0): Linear(in_features=1200, out_features=256, bias=True)
+    (1): ReLU()
+    (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): ReLU()
+    (6): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Linear(in_features=128, out_features=5, bias=True)
+  )
+)
+Hospital A - Round 1 Training
+  Training complete. Loss: 0.7793, AUROC: 0.4876
+Hospital A - Round 2 Training
+  Training complete. Loss: 0.6610, AUROC: 0.4796
+Hospital A - Round 3 Training
+  Training complete. Loss: 0.5609, AUROC: 0.4778
+Hospital A - Round 4 Training
+  Training complete. Loss: 0.4732, AUROC: 0.4857
+Hospital A - Round 5 Training
+  Training complete. Loss: 0.3900, AUROC: 0.4922

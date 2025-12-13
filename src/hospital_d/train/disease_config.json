@@ -1,0 +1,31 @@
+{
+    "train_signals": "src/hospital_d/data/X_synth.npy",
+    "train_labels": "src/hospital_d/data/Y_synth.npy",
+    "val_signals": "src/hospital_d/data/X_synth.npy",
+    "val_labels": "src/hospital_d/data/Y_synth.npy",
+    "output_dir": "src/hospital_d/train/checkpoints",
+    "batch_size": 32,
+    "epochs": 10,
+    "lr": 1e-4,
+    "leads_idx": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+    ],
+    "model_config": {
+        "in_channels": 8,
+        "res_channels": 128,
+        "skip_channels": 128,
+        "num_res_layers": 12,
+        "s4_lmax": 1000,
+        "s4_d_state": 64,
+        "s4_dropout": 0.0,
+        "s4_bidirectional": 1,
+        "s4_layernorm": 1
+    }
+}

@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.DS_Store
+Thumbs.db
+
+# Large Models (GitHub limit is 100MB)
+# preventing push rejection for the 98MB model just in case
+*.pth
+*.h5
+*.ckpt
+
+# FL Results (Optional - keep these if you want the audit trail)
+# fl_results/
+# keeping audit_chain.json as proof

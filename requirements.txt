@@ -1,0 +1,11 @@
+torch
+torchvision
+numpy
+pandas
+scikit-learn
+pillow
+fastapi
+uvicorn
+grad-cam
+requests
+matplotlib

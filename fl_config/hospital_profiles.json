@@ -1,0 +1,116 @@
+{
+    "hospitals": [
+        {
+            "id": "A",
+            "name": "General Cardiology",
+            "modalities": {
+                "ECG": 1.0,
+                "Vitals": 0.0,
+                "CXR": 0.0,
+                "Audio": 0.0
+            },
+            "labels": [
+                "NORM",
+                "MI",
+                "STTC",
+                "CD",
+                "HYP"
+            ],
+            "specialty": "Cardiology",
+            "demographic": "General (18-85 yrs)",
+            "num_samples": 17418
+        },
+        {
+            "id": "B",
+            "name": "ICU Deterioration Monitoring",
+            "modalities": {
+                "ECG": 0.0,
+                "Vitals": 1.0,
+                "CXR": 0.0,
+                "Audio": 0.0
+            },
+            "labels": [
+                "Deterioration",
+                "Sepsis",
+                "Hypoxia",
+                "HYP"
+            ],
+            "specialty": "Pulmonary/General Monitoring",
+            "demographic": "ICU/Trauma",
+            "num_samples": 800
+        },
+        {
+            "id": "C",
+            "name": "Respiratory Diagnostics",
+            "modalities": {
+                "ECG": 0.0,
+                "Vitals": 0.0,
+                "CXR": 1.0,
+                "Audio": 0.0
+            },
+            "labels": [
+                "Atelectasis",
+                "Cardiomegaly",
+                "Effusion",
+                "Infiltration",
+                "Mass",
+                "Nodule",
+                "Pneumonia",
+                "Pneumothorax",
+                "Consolidation",
+                "Edema",
+                "Emphysema",
+                "Fibrosis",
+                "Pleural_Thickening",
+                "Hernia"
+            ],
+            "specialty": "Respiratory Diagnostics",
+            "demographic": "Pediatric & Adult",
+            "num_samples": 160
+        },
+        {
+            "id": "D",
+            "name": "Geriatric Cardiology",
+            "modalities": {
+                "ECG": 1.0,
+                "Vitals": 0.0,
+                "CXR": 0.0,
+                "Audio": 0.0
+            },
+            "labels": [
+                "NORM",
+                "MI",
+                "STTC",
+                "CD",
+                "HYP"
+            ],
+            "specialty": "Elder Cardiology",
+            "demographic": "Geriatric (60+)",
+            "num_samples": 2400
+        },
+        {
+            "id": "E",
+            "name": "Multimodal Fusion",
+            "modalities": {
+                "ECG": 1.0,
+                "Vitals": 1.0,
+                "CXR": 1.0,
+                "Audio": 0.0
+            },
+            "labels": [
+                "NORM",
+                "MI",
+                "STTC",
+                "CD",
+                "HYP"
+            ],
+            "specialty": "Multimodal Fusion (Cross-Domain)",
+            "demographic": "General",
+            "num_samples": 2400
+        }
+    ],
+    "manual_overrides": {
+        "_comment": "Optional manual overrides for specific hospital pairs. Format: 'Hospital_i-Hospital_j': score",
+        "_example": "A-D: 0.95 (both ECG cardiology, very high relevance)"
+    }
+}
