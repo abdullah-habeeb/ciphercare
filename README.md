@@ -1,133 +1,110 @@
-CipherCare
-Federated Learning Platform for Privacy-Preserving Healthcare AI
-Overview
+# CipherCare
+### Privacy-Preserving Federated Learning Platform for Healthcare AI
 
-CipherCare is a research-oriented, full-stack platform that demonstrates privacy-preserving federated learning in healthcare systems, enhanced with differential privacy, domain relevance weighting, and blockchain-based auditability.
+CipherCare is a research-oriented, full-stack platform that demonstrates privacy-preserving federated learning for healthcare systems. The platform enables multiple hospitals to collaboratively train machine learning models without sharing raw patient data, addressing privacy, fairness, and compliance challenges in real-world healthcare AI.
 
-The system simulates multiple hospitals collaboratively training machine learning models without sharing raw patient data, while maintaining transparency, fairness, and traceability across training rounds.
+The system integrates differential privacy, domain relevance–aware aggregation, and blockchain-inspired auditability to provide a transparent and secure federated learning workflow. This repository emphasizes system architecture, orchestration logic, and reproducible experimentation rather than storing large datasets or trained artifacts.
 
-This repository focuses on system design, orchestration logic, and reproducible experimentation, rather than serving as a data dump.
+---
 
-Key Features
+## Key Features
 
-Federated learning across multiple simulated hospitals
+- Federated learning across multiple simulated hospitals  
+- Differential privacy for secure gradient updates  
+- Domain relevance–weighted aggregation strategies  
+- Blockchain-style audit trail for training transparency  
+- Hospital-level personalization and evaluation  
+- End-to-end experiment orchestration scripts  
+- Dashboard-ready backend and frontend integration  
 
-Differential privacy mechanisms for gradient updates
+---
 
-Domain relevance–aware aggregation strategies
+## System Architecture
 
-Blockchain-style audit trail for model updates
+CipherCare is composed of four primary layers:
 
-Hospital-level personalization and evaluation
+- **Federated Server**  
+  Coordinates training rounds, aggregates client updates, and maintains audit records.
 
-Dashboard-ready backend and frontend integration
+- **Hospital Clients**  
+  Train local models on private datasets, apply privacy mechanisms, and never expose raw patient data.
 
-End-to-end experiment orchestration scripts
+- **Audit Layer**  
+  Records immutable metadata for each training round, enabling traceability and compliance analysis.
 
-Architecture Overview
+- **Monitoring Dashboard**  
+  Visualizes training progress, performance metrics, and fairness indicators.
 
-Federated Server
+---
 
-Coordinates training rounds
+## Repository Structure
 
-Aggregates client updates
+src/                    Core federated learning logic  
+fl_utils/               Privacy, personalization, and aggregation utilities  
+fl_config/              Configuration files and domain relevance settings  
+fl_dashboard/            Monitoring dashboard (frontend + backend)  
+examples/               Example aggregation and evaluation scripts  
+tests/                  Unit and integration tests  
+*.md                    Technical documentation and walkthroughs  
 
-Maintains audit records
 
-Hospital Clients
+---
 
-Train local models on private data
+## Datasets and Artifacts
 
-Apply privacy and personalization logic
+Due to size, privacy, and compliance constraints, datasets, trained model weights, and large experiment outputs are intentionally excluded from this repository.
+Excluded artifacts include:
+- `.npy` datasets
+- Trained model weights
+- Large evaluation and metric outputs
 
-Audit Layer
+### Using Your Own Data
 
-Records immutable training metadata
-
-Enables traceability and compliance reasoning
-
-Dashboard
-
-Visualizes training progress, metrics, and fairness indicators
-
-Repository Structure
-src/                    Core federated learning logic
-fl_utils/               Privacy, personalization, and aggregation utilities
-fl_config/              Configuration files and domain relevance settings
-fl_dashboard/            Monitoring dashboard (frontend + backend)
-examples/               Example aggregation and evaluation scripts
-tests/                  Unit and integration tests
-*.md                    Technical documentation and walkthroughs
-
-Dataset & Artifacts (Important)
-
-Due to size and privacy constraints, datasets, trained models, and experiment outputs are not included in this repository.
-
-These artifacts include:
-
-.npy datasets
-
-trained model weights
-
-large evaluation outputs
-
-How to use your own data
-
-Download or prepare datasets externally
-
-Place them under:
-
+1. Prepare or download datasets externally.
+2. Place the datasets under:
 src/hospital_*/data/
 
+3. Follow the configuration and quickstart guides provided in the documentation files.
 
-Follow the configuration guides provided in the documentation files
+This approach keeps the repository lightweight, reproducible, and aligned with industry and academic best practices.
 
-This approach keeps the repository lightweight, compliant, and reproducible.
+---
 
-Getting Started
-Prerequisites
+## Getting Started
 
-Python 3.9+
+### Prerequisites
 
-Virtual environment recommended
+- Python 3.9 or higher  
+- Virtual environment (recommended)  
+- Dependencies listed in `requirements.txt`  
 
-Common ML libraries (see requirements.txt)
+### Installation
 
-Setup
+```bash
 pip install -r requirements.txt
 
-Run a federated simulation
+### Running a Federated Simulation
+
+Start the federated server:
 python fl_server.py
 
+### Reproducibility Philosophy
 
-Run individual hospital clients in separate terminals as documented in the quickstart guides.
-
-Reproducibility Philosophy
-
-CipherCare is designed around reproducible systems, not static artifacts.
-
-Experiments are recreated via code
-
-Results are derived, not stored
-
-Configurations are explicit and versioned
-
+CipherCare follows a code-first reproducibility model:
+Experiments are recreated via code and configuration files
+Results are derived rather than stored
+Large artifacts are intentionally excluded from version control
 This mirrors real-world ML research and production workflows.
 
-Use Cases
+### Use Cases
 
 Privacy-preserving healthcare AI research
-
 Federated learning system prototyping
-
 Academic demonstrations and hackathons
+Compliance-aware machine learning system design
 
-Compliance-aware ML system design
-
-License
-
+### License
 ISC License
 
-Author
-
+### Author
 Developed as part of an applied research and hackathon initiative focused on secure, distributed machine learning systems.
