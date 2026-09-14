@@ -1,0 +1,44 @@
+{
+  "round": 3,
+  "timestamp": "2026-07-24T08:08:19.722321",
+  "num_clients": 5,
+  "total_samples": 32600,
+  "data_source": "real_fl_training",
+  "clients": [
+    {
+      "id": "E",
+      "auroc": 0.780680492667541,
+      "samples": 680,
+      "raw_weight": 0.0,
+      "normalized_weight": 0.19779289589954446
+    },
+    {
+      "id": "D",
+      "auroc": 0.6676589220240223,
+      "samples": 10242,
+      "raw_weight": 0.0,
+      "normalized_weight": 0.19061930996460824
+    },
+    {
+      "id": "B",
+      "auroc": 0.9119897959183674,
+      "samples": 800,
+      "raw_weight": 0.0,
+      "normalized_weight": 0.24329469727535152
+    },
+    {
+      "id": "A",
+      "auroc": 0.6947829139005327,
+      "samples": 17418,
+      "raw_weight": 0.0,
+      "normalized_weight": 0.2313566218051991
+    },
+    {
+      "id": "C",
+      "auroc": 0.6219171268277637,
+      "samples": 3460,
+      "raw_weight": 0.0,
+      "normalized_weight": 0.1369364750552966
+    }
+  ]
+}

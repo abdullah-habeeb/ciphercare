@@ -1,0 +1,818 @@
+[
+  {
+    "block_index": 0,
+    "timestamp": "2026-07-23T07:06:01.210929",
+    "block_type": "GENESIS",
+    "data": {
+      "message": "Federated Learning Audit Chain Initialized",
+      "framework": "FedProx + DP + Fairness Weighting"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "468e71519f5dc9d35af5f99434a8b7853d49f01b0c294a3b6151aa7a902cd89f"
+  },
+  {
+    "block_index": 1,
+    "timestamp": "2026-07-23T07:11:55.721401",
+    "block_type": "FL_ROUND",
+    "round_number": 1,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 2800,
+      "client_weights": [
+        {
+          "id": "D",
+          "auroc": 0.4767070805575161,
+          "samples": 500,
+          "normalized_weight": 0.19205558263027203
+        },
+        {
+          "id": "B",
+          "auroc": 0.5181763241163088,
+          "samples": 500,
+          "normalized_weight": 0.18737637536470936
+        },
+        {
+          "id": "C",
+          "auroc": 0.4889843284458464,
+          "samples": 300,
+          "normalized_weight": 0.16595071025915042
+        },
+        {
+          "id": "A",
+          "auroc": 0.5118485408540854,
+          "samples": 1000,
+          "normalized_weight": 0.2513669932852128
+        },
+        {
+          "id": "E",
+          "auroc": 0.4917390641895521,
+          "samples": 500,
+          "normalized_weight": 0.20325033846065538
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "468e71519f5dc9d35af5f99434a8b7853d49f01b0c294a3b6151aa7a902cd89f",
+    "hash": "7eb21417872e635c76d816519772238f1b6ffb6410b90f6a8a080d9944501b52"
+  },
+  {
+    "block_index": 2,
+    "timestamp": "2026-07-23T07:11:57.550224",
+    "block_type": "FL_ROUND",
+    "round_number": 2,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 2800,
+      "client_weights": [
+        {
+          "id": "A",
+          "auroc": 0.5206067286728673,
+          "samples": 1000,
+          "normalized_weight": 0.24937214382896664
+        },
+        {
+          "id": "B",
+          "auroc": 0.5317383049768198,
+          "samples": 500,
+          "normalized_weight": 0.1893866400349714
+        },
+        {
+          "id": "E",
+          "auroc": 0.4877494875358167,
+          "samples": 500,
+          "normalized_weight": 0.19640464123791662
+        },
+        {
+          "id": "C",
+          "auroc": 0.49609890364886783,
+          "samples": 300,
+          "normalized_weight": 0.16511817521690245
+        },
+        {
+          "id": "D",
+          "auroc": 0.5038412197297204,
+          "samples": 500,
+          "normalized_weight": 0.1997183996812429
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "7eb21417872e635c76d816519772238f1b6ffb6410b90f6a8a080d9944501b52",
+    "hash": "e8a5d5ae92ac287ed48b50551faf4090817ef8c759eb4fe116205bc49a4a95c6"
+  },
+  {
+    "block_index": 3,
+    "timestamp": "2026-07-23T07:11:59.368777",
+    "block_type": "FL_ROUND",
+    "round_number": 3,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 2800,
+      "client_weights": [
+        {
+          "id": "D",
+          "auroc": 0.4804318281113744,
+          "samples": 500,
+          "normalized_weight": 0.18851303693152868
+        },
+        {
+          "id": "C",
+          "auroc": 0.5045371879216868,
+          "samples": 300,
+          "normalized_weight": 0.16864580691375167
+        },
+        {
+          "id": "A",
+          "auroc": 0.523365898589859,
+          "samples": 1000,
+          "normalized_weight": 0.25010681692549824
+        },
+        {
+          "id": "B",
+          "auroc": 0.5528275885171541,
+          "samples": 500,
+          "normalized_weight": 0.1995687553529736
+        },
+        {
+          "id": "E",
+          "auroc": 0.4816252980879806,
+          "samples": 500,
+          "normalized_weight": 0.1931655838762479
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "e8a5d5ae92ac287ed48b50551faf4090817ef8c759eb4fe116205bc49a4a95c6",
+    "hash": "e3f55ecc5a50b7ccf25db97ecce6d651e48252f80536167ef6fc4b8de1c5c128"
+  },
+  {
+    "block_index": 4,
+    "timestamp": "2026-07-23T07:26:37.763153",
+    "block_type": "FL_ROUND",
+    "round_number": 1,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 2800,
+      "client_weights": [
+        {
+          "id": "C",
+          "auroc": 0.5006730158730159,
+          "samples": 300,
+          "normalized_weight": 0.1711139599616071
+        },
+        {
+          "id": "A",
+          "auroc": 0.4998298304637047,
+          "samples": 1000,
+          "normalized_weight": 0.2450242859419363
+        },
+        {
+          "id": "E",
+          "auroc": 0.4901711635747511,
+          "samples": 500,
+          "normalized_weight": 0.20207865802323083
+        },
+        {
+          "id": "D",
+          "auroc": 0.48136680926433595,
+          "samples": 500,
+          "normalized_weight": 0.19377299376468843
+        },
+        {
+          "id": "B",
+          "auroc": 0.5202682272358896,
+          "samples": 500,
+          "normalized_weight": 0.18801010230853743
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "e3f55ecc5a50b7ccf25db97ecce6d651e48252f80536167ef6fc4b8de1c5c128",
+    "hash": "96d48727a920952bb9d2207d747958100c3863a8a32d449fda539ebb745638ed"
+  },
+  {
+    "block_index": 5,
+    "timestamp": "2026-07-23T07:26:39.506577",
+    "block_type": "FL_ROUND",
+    "round_number": 2,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 2800,
+      "client_weights": [
+        {
+          "id": "A",
+          "auroc": 0.513459315502881,
+          "samples": 1000,
+          "normalized_weight": 0.24819965273677844
+        },
+        {
+          "id": "C",
+          "auroc": 0.5090984126984127,
+          "samples": 300,
+          "normalized_weight": 0.17279629612767144
+        },
+        {
+          "id": "B",
+          "auroc": 0.522510214469409,
+          "samples": 500,
+          "normalized_weight": 0.18655887995595655
+        },
+        {
+          "id": "D",
+          "auroc": 0.48947480760811757,
+          "samples": 500,
+          "normalized_weight": 0.19484835427476185
+        },
+        {
+          "id": "E",
+          "auroc": 0.48638770125485387,
+          "samples": 500,
+          "normalized_weight": 0.19759681690483163
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "96d48727a920952bb9d2207d747958100c3863a8a32d449fda539ebb745638ed",
+    "hash": "7d8867302175938d6c4087a624dd55567caeef15d9492d198a53d1f3cfe6e393"
+  },
+  {
+    "block_index": 6,
+    "timestamp": "2026-07-23T07:26:41.148963",
+    "block_type": "FL_ROUND",
+    "round_number": 3,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 2800,
+      "client_weights": [
+        {
+          "id": "E",
+          "auroc": 0.4830242811655573,
+          "samples": 500,
+          "normalized_weight": 0.19874955181252668
+        },
+        {
+          "id": "A",
+          "auroc": 0.5063542056493724,
+          "samples": 1000,
+          "normalized_weight": 0.24814434325540896
+        },
+        {
+          "id": "C",
+          "auroc": 0.5147555555555554,
+          "samples": 300,
+          "normalized_weight": 0.17792871021050094
+        },
+        {
+          "id": "B",
+          "auroc": 0.509933489253052,
+          "samples": 500,
+          "normalized_weight": 0.1829202157639093
+        },
+        {
+          "id": "D",
+          "auroc": 0.47807730817927085,
+          "samples": 500,
+          "normalized_weight": 0.19225717895765415
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "7d8867302175938d6c4087a624dd55567caeef15d9492d198a53d1f3cfe6e393",
+    "hash": "cacfa142399712a935dfe0c0e9bf17129cd0751a26f27779bbe884fa3c615b20"
+  },
+  {
+    "block_index": 7,
+    "timestamp": "2026-07-23T02:04:12.296257",
+    "block_type": "FL_ROUND",
+    "round_number": 4,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "data_source": "synthetic_simulation",
+      "num_clients": 5,
+      "total_samples": 26801,
+      "client_weights": [
+        {
+          "id": "A",
+          "auroc": 0.5165,
+          "normalized_weight": 0.3352
+        },
+        {
+          "id": "B",
+          "auroc": 0.5234,
+          "normalized_weight": 0.1604
+        },
+        {
+          "id": "C",
+          "auroc": 0.5251,
+          "normalized_weight": 0.1543
+        },
+        {
+          "id": "D",
+          "auroc": 0.4984,
+          "normalized_weight": 0.1816
+        },
+        {
+          "id": "E",
+          "auroc": 0.5039,
+          "normalized_weight": 0.1685
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "cacfa142399712a935dfe0c0e9bf17129cd0751a26f27779bbe884fa3c615b20",
+    "hash": "70f2078748394469569b6553bc2647e55257b98c04131577ea021fc7ba4eb3a2"
+  },
+  {
+    "block_index": 8,
+    "timestamp": "2026-07-23T02:04:44.676338",
+    "block_type": "FL_ROUND",
+    "round_number": 5,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "data_source": "synthetic_simulation",
+      "num_clients": 5,
+      "total_samples": 26801,
+      "client_weights": [
+        {
+          "id": "A",
+          "auroc": 0.5232,
+          "normalized_weight": 0.3286
+        },
+        {
+          "id": "B",
+          "auroc": 0.5328,
+          "normalized_weight": 0.1603
+        },
+        {
+          "id": "C",
+          "auroc": 0.5342,
+          "normalized_weight": 0.1542
+        },
+        {
+          "id": "D",
+          "auroc": 0.5164,
+          "normalized_weight": 0.1846
+        },
+        {
+          "id": "E",
+          "auroc": 0.5226,
+          "normalized_weight": 0.1723
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "70f2078748394469569b6553bc2647e55257b98c04131577ea021fc7ba4eb3a2",
+    "hash": "7473b2fda8672dcc8b40d2c00320aac55d35bbdce7c0088e3fa6baa65bd55af8"
+  },
+  {
+    "block_index": 9,
+    "timestamp": "2026-07-24T07:36:50.281263",
+    "block_type": "FL_ROUND",
+    "round_number": 1,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 32600,
+      "client_weights": [
+        {
+          "id": "A",
+          "auroc": 0.6550244218850352,
+          "samples": 17418,
+          "normalized_weight": 0.3130679154716055
+        },
+        {
+          "id": "E",
+          "auroc": 0.5264814874145702,
+          "samples": 680,
+          "normalized_weight": 0.15288578395019115
+        },
+        {
+          "id": "B",
+          "auroc": 0.5,
+          "samples": 800,
+          "normalized_weight": 0.11873065387644836
+        },
+        {
+          "id": "D",
+          "auroc": 0.6125602050335008,
+          "samples": 10242,
+          "normalized_weight": 0.24739535963776618
+        },
+        {
+          "id": "C",
+          "auroc": 0.5582513210727191,
+          "samples": 3460,
+          "normalized_weight": 0.16792028706398882
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "7473b2fda8672dcc8b40d2c00320aac55d35bbdce7c0088e3fa6baa65bd55af8",
+    "hash": "e129c7447f5eda6d82e865bb89de85b59ea3d183d54a55edb8edf12b92814613"
+  },
+  {
+    "block_index": 10,
+    "timestamp": "2026-07-24T07:42:30.011428",
+    "block_type": "FL_ROUND",
+    "round_number": 2,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 32600,
+      "client_weights": [
+        {
+          "id": "D",
+          "auroc": 0.649793946875196,
+          "samples": 10242,
+          "normalized_weight": 0.2305453215186627
+        },
+        {
+          "id": "E",
+          "auroc": 0.735896674773233,
+          "samples": 680,
+          "normalized_weight": 0.2241280869680666
+        },
+        {
+          "id": "C",
+          "auroc": 0.5716840097217857,
+          "samples": 3460,
+          "normalized_weight": 0.15067969752403848
+        },
+        {
+          "id": "A",
+          "auroc": 0.6991299594739246,
+          "samples": 17418,
+          "normalized_weight": 0.2918304845455785
+        },
+        {
+          "id": "B",
+          "auroc": 0.5,
+          "samples": 800,
+          "normalized_weight": 0.10281640944365379
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "e129c7447f5eda6d82e865bb89de85b59ea3d183d54a55edb8edf12b92814613",
+    "hash": "192be056e76ed8d1b3bacf064bd1399ea5f98cb95d6db6d73e7ff9a5078b062d"
+  },
+  {
+    "block_index": 11,
+    "timestamp": "2026-07-24T07:47:58.460951",
+    "block_type": "FL_ROUND",
+    "round_number": 3,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 32600,
+      "client_weights": [
+        {
+          "id": "C",
+          "auroc": 0.6238140196850545,
+          "samples": 3460,
+          "normalized_weight": 0.1582073610673852
+        },
+        {
+          "id": "D",
+          "auroc": 0.6855671641412933,
+          "samples": 10242,
+          "normalized_weight": 0.22690215067968122
+        },
+        {
+          "id": "B",
+          "auroc": 0.5,
+          "samples": 800,
+          "normalized_weight": 0.09440391264706767
+        },
+        {
+          "id": "E",
+          "auroc": 0.8145427921054956,
+          "samples": 680,
+          "normalized_weight": 0.24464016508970743
+        },
+        {
+          "id": "A",
+          "auroc": 0.716629474941218,
+          "samples": 17418,
+          "normalized_weight": 0.2758464105161586
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0000000000000002,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "192be056e76ed8d1b3bacf064bd1399ea5f98cb95d6db6d73e7ff9a5078b062d",
+    "hash": "baa88036ad096c3bb3892a6a7e2982152b158d2d10e53be7a0fd21285f9a9104"
+  },
+  {
+    "block_index": 12,
+    "timestamp": "2026-07-24T07:57:00.131747",
+    "block_type": "FL_ROUND",
+    "round_number": 1,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 32600,
+      "client_weights": [
+        {
+          "id": "C",
+          "auroc": 0.5945328113444787,
+          "samples": 3460,
+          "normalized_weight": 0.15607934272876967
+        },
+        {
+          "id": "D",
+          "auroc": 0.6153388000853319,
+          "samples": 10242,
+          "normalized_weight": 0.21023756376039265
+        },
+        {
+          "id": "B",
+          "auroc": 0.8316326530612246,
+          "samples": 800,
+          "normalized_weight": 0.249898946310295
+        },
+        {
+          "id": "A",
+          "auroc": 0.6494714280016242,
+          "samples": 17418,
+          "normalized_weight": 0.2621310100503732
+        },
+        {
+          "id": "E",
+          "auroc": 0.5048483324154358,
+          "samples": 680,
+          "normalized_weight": 0.12165313715016954
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "baa88036ad096c3bb3892a6a7e2982152b158d2d10e53be7a0fd21285f9a9104",
+    "hash": "80e95d015852db007650c1ac632b138e3d3e0d460fbd4ff0c1937b179371bc4e"
+  },
+  {
+    "block_index": 13,
+    "timestamp": "2026-07-24T08:02:42.602666",
+    "block_type": "FL_ROUND",
+    "round_number": 2,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 32600,
+      "client_weights": [
+        {
+          "id": "D",
+          "auroc": 0.6488855097836626,
+          "samples": 10242,
+          "normalized_weight": 0.19307328395590934
+        },
+        {
+          "id": "A",
+          "auroc": 0.6856788868457048,
+          "samples": 17418,
+          "normalized_weight": 0.23940936940311722
+        },
+        {
+          "id": "B",
+          "auroc": 0.9005102040816326,
+          "samples": 800,
+          "normalized_weight": 0.24955321759685095
+        },
+        {
+          "id": "E",
+          "auroc": 0.7105706150133131,
+          "samples": 680,
+          "normalized_weight": 0.17736826023415317
+        },
+        {
+          "id": "C",
+          "auroc": 0.6128132052299609,
+          "samples": 3460,
+          "normalized_weight": 0.14059586880996944
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0000000000000002,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "80e95d015852db007650c1ac632b138e3d3e0d460fbd4ff0c1937b179371bc4e",
+    "hash": "f2e9b93bf72a27f4a45bf5bf77d323151a5d9072101e23e601f483e59f5d5112"
+  },
+  {
+    "block_index": 14,
+    "timestamp": "2026-07-24T08:08:19.722321",
+    "block_type": "FL_ROUND",
+    "round_number": 3,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 5,
+      "total_samples": 32600,
+      "client_weights": [
+        {
+          "id": "E",
+          "auroc": 0.780680492667541,
+          "samples": 680,
+          "normalized_weight": 0.19779289589954446
+        },
+        {
+          "id": "D",
+          "auroc": 0.6676589220240223,
+          "samples": 10242,
+          "normalized_weight": 0.19061930996460824
+        },
+        {
+          "id": "B",
+          "auroc": 0.9119897959183674,
+          "samples": 800,
+          "normalized_weight": 0.24329469727535152
+        },
+        {
+          "id": "A",
+          "auroc": 0.6947829139005327,
+          "samples": 17418,
+          "normalized_weight": 0.2313566218051991
+        },
+        {
+          "id": "C",
+          "auroc": 0.6219171268277637,
+          "samples": 3460,
+          "normalized_weight": 0.1369364750552966
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 0.9999999999999999,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "f2e9b93bf72a27f4a45bf5bf77d323151a5d9072101e23e601f483e59f5d5112",
+    "hash": "7cc3c1f591d41c2fa11dcea0f154d5f8d8076ce6aa96e1d4bc1a6da4eef655f1"
+  },
+  {
+    "block_index": 15,
+    "timestamp": "2026-09-14T07:09:05.746824",
+    "block_type": "FL_ROUND",
+    "round_number": 1,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 2,
+      "total_samples": 4260,
+      "client_weights": [
+        {
+          "id": "C",
+          "auroc": 0.6228051107505574,
+          "samples": 3460,
+          "normalized_weight": 0.5279956956870653
+        },
+        {
+          "id": "B",
+          "auroc": 0.7940051020408163,
+          "samples": 800,
+          "normalized_weight": 0.4720043043129347
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "7cc3c1f591d41c2fa11dcea0f154d5f8d8076ce6aa96e1d4bc1a6da4eef655f1",
+    "hash": "f8cd85bb890e234e1d22bc624fa36e2e3c122e458eb2316d8ac78d81bcdd4cbe"
+  },
+  {
+    "block_index": 16,
+    "timestamp": "2026-09-14T07:15:07.094315",
+    "block_type": "FL_ROUND",
+    "round_number": 2,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 2,
+      "total_samples": 4260,
+      "client_weights": [
+        {
+          "id": "C",
+          "auroc": 0.5969592067312923,
+          "samples": 3460,
+          "normalized_weight": 0.4828879383736102
+        },
+        {
+          "id": "B",
+          "auroc": 0.8641581632653061,
+          "samples": 800,
+          "normalized_weight": 0.5171120616263898
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "f8cd85bb890e234e1d22bc624fa36e2e3c122e458eb2316d8ac78d81bcdd4cbe",
+    "hash": "3f9619a1350fad82473568c5ff1ffe718026e4bdaca28f15059bbd37699a4028"
+  },
+  {
+    "block_index": 17,
+    "timestamp": "2026-09-14T07:19:51.781215",
+    "block_type": "FL_ROUND",
+    "round_number": 3,
+    "data": {
+      "aggregation_method": "FedProxFairness",
+      "num_clients": 2,
+      "total_samples": 4260,
+      "client_weights": [
+        {
+          "id": "B",
+          "auroc": 0.6447704081632654,
+          "samples": 800,
+          "normalized_weight": 0.3991190889883861
+        },
+        {
+          "id": "C",
+          "auroc": 0.5983609569281904,
+          "samples": 3460,
+          "normalized_weight": 0.6008809110116139
+        }
+      ],
+      "fairness_formula": "0.6*AUROC\u00b2 + 0.3*samples + 0.1*domain_relevance",
+      "weights_sum": 1.0,
+      "verification": {
+        "weights_normalized": true,
+        "all_clients_present": true
+      }
+    },
+    "previous_hash": "3f9619a1350fad82473568c5ff1ffe718026e4bdaca28f15059bbd37699a4028",
+    "hash": "7ce5135ab07b8a0d7301d0b720f2e7f7d56ccc3ca8d07a88b95338b28405b386"
+  }
+]

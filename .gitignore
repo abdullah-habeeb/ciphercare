@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Env
+.env
+.env.*
+
+# Logs / scratch
+*.log
+tmp_pid.txt
+path_debug.txt
+
+# Raw downloaded datasets (PTB-XL zip/extraction, NIH X-rays, vitals, etc.)
+raw_data/
+data/
+src/hospital_a/data/
+src/hospital_d/data/
+src/hospital_e/data/
+
+# Trained model weights / checkpoints
+*.pth
+fl_results/checkpoints/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# OS / IDE
+.DS_Store
+.vscode/

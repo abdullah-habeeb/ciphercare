@@ -1,0 +1,46 @@
+# Federated learning
+flwr
+
+# Deep learning
+torch
+torchvision
+pytorch-lightning
+
+# S4 model support (src/hospital_a, src/hospital_d models)
+scipy
+einops
+opt-einsum
+
+# Data handling
+numpy
+pandas
+pillow
+opencv-python
+wfdb
+datasets
+
+# Classic ML
+scikit-learn
+xgboost
+joblib
+
+# Serving
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+sqlmodel
+
+# Explainability / visualization
+grad-cam
+matplotlib
+seaborn
+
+# Blockchain-style audit hashing
+pycryptodome
+
+# Networking
+requests
+
+# Testing
+pytest
